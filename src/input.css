@@ -53,3 +53,5 @@ header {
 button[aria-expanded="true"] {
     color: black;
 }
+
+@media (max-width: 992px) { .rellax { transform: translate3d(0,0,0) !important; } }
