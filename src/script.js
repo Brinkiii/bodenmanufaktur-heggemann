@@ -17,3 +17,23 @@ const lenis = new Lenis()
         requestAnimationFrame(raf)
     }
 requestAnimationFrame(raf)
+
+let scrollClass = function() {
+    var pageNavi = document.getElementById('navigation');
+    if(window.scrollY > 1){
+        pageNavi.classList.add('scroll');
+    }
+    window.addEventListener('scroll', function () {
+    var scrollTop = window.scrollY;
+
+    if (scrollTop > 1) {
+     pageNavi.classList.add('scroll');
+    }
+
+    else if (scrollTop < 1) {
+      pageNavi.classList.remove('scroll');
+    }
+    });
+}
+
+scrollClass();

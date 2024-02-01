@@ -55,3 +55,27 @@ button[aria-expanded="true"] {
 }
 
 @media (max-width: 992px) { .rellax { transform: translate3d(0,0,0) !important; } }
+
+.scroll {
+  @apply bg-black text-white;
+  transition: ease all .4s;
+
+}
+
+.scroll a, .scroll path {
+  @apply text-white;
+  transition: ease all .4s;
+
+}
+
+#navigation, #navigation img {
+  transition: ease all .4s;
+}
+
+#navigation.scroll {
+  @apply fixed top-0 w-full z-50
+}
+
+.scroll img {
+  filter: invert();
+}
